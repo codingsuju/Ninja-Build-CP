@@ -1,5 +1,7 @@
 @echo off
 set previous=%CD%
 cd %~dp0
-type ..\cppsnippets\%1.cpp >> %previous%\..\code.cpp
+dir ..\cppsnippets\
+set /p snip=snip:
+CLIP < ..\cppsnippets\%snip%.cpp
 cd %previous%
