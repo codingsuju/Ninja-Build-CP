@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22.0)
 
-project(Code)
+project(Code LANGUAGES CXX)
 
 add_executable(${PROJECT_NAME} code.cpp)
 
